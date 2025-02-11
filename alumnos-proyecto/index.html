@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <h1>Asitencia para alumnos</h1>
+    <div class="alumnos">
+            <form action="" class="elementoEliminar">
+                <label for="alumnos">Crear lista de alumnos:</label><br><br>
+                <input type="text" id="alumnos" class="cantidad" placeholder="Ingrese numero de estudiantes">
+                <button onclick="crearLista(event)">Ingresar alumno/s</button><br><br>
+            </form>
+    </div>
+    <div>
+        <label for="añadoAlumno">Añadir alumno/s:</label><br><br>
+        <input id="añadoAlumno" type="text" placeholder="Ingrese nombre...">
+        <button onclick="añadirAlumnos(event)"> Añadir   alumno/s </button><br><br>
+
+    </div>
+    <div class="eliminarAlumno">
+    <label for="nombreEliminar"> Ingrese un nombre a eliminar de la lista: </label><br><br>
+    <input type="text" placeholder="Ingrese nombre..." id="nombreEliminar">
+    <button onclick="eliminarAlumno(event)">Eliminar alumno/s</button>
+    
+    </div>
+
+    
+    <div class="muestra">
+        <h1>Muestra de alumnos:</h1>
+        <button onclick="mostrarAlumnos()">mostrar alumnos</button>
+        <p id="muestraAlumnos">
+
+        </p>
+    </div>
+
+        <script src="cofla.js"></script>
+</body>
+</html>
