@@ -32,11 +32,23 @@
     
     <div class="muestra">
         <h1>Muestra de alumnos:</h1>
-        <button onclick="mostrarAlumnos()">mostrar alumnos</button>
-        <p id="muestraAlumnos">
-
-        </p>
+        <button onclick="mostrarAlumnos(event)">mostrar alumnos</button>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td><b>Nombre</b></td>
+                    <td><b>Asistencia</b></td>
+                    <td><b>Total</b></td>
+                </tr>
+            </thead>
+            <tbody id="tablaBody">
+                <!-- Aquí se agregarán las filas de alumnos -->
+            </tbody>
+        </table>
     </div>
+    <p id="prueba">
+
+    </p>
 
         <script src="cofla.js"></script>
 </body>
